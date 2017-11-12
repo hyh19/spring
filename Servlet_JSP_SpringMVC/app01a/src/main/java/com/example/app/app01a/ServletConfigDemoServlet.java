@@ -1,12 +1,19 @@
 package com.example.app.app01a;
 
 import javax.servlet.*;
+import javax.servlet.annotation.WebInitParam;
 import javax.servlet.annotation.WebServlet;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet(name = "MyServlet", urlPatterns = {"/my"})
-public class MyServlet implements Servlet {
+@WebServlet(name = "ServletConfigDemoServlet",
+        urlPatterns = {"/servletConfigDemo"},
+        initParams = {
+                @WebInitParam(name = "admin", value = "Harry Taciak"),
+                @WebInitParam(name = "email", value = "admin@example.com")
+        }
+)
+public class ServletConfigDemoServlet implements Servlet {
 
     private transient ServletConfig servletConfig;
 
@@ -19,16 +26,19 @@ public class MyServlet implements Servlet {
     }
 
     public void service(ServletRequest servletRequest, ServletResponse servletResponse) throws ServletException, IOException {
-        String servletName = servletConfig.getServletName();
+        ServletConfig servletConfig = getServletConfig();
+        String admin = servletConfig.getInitParameter("admin");
+        String email = servletConfig.getInitParameter("email");
         servletResponse.setContentType("text/html");
         PrintWriter writer = servletResponse.getWriter();
-        writer.print("<html><head></head>" +
-                "<body>Hello from " + servletName +
+        writer.print("<html><head></head><body>" +
+                "Admin:" + admin +
+                "<br/>Email:" + email +
                 "</body></html>");
     }
 
     public String getServletInfo() {
-        return "My Servlet";
+        return "ServletConfig demo";
     }
 
     public void destroy() {
