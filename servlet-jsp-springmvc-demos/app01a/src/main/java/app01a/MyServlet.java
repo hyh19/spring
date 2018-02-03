@@ -1,4 +1,4 @@
-package com.example.app.app01a;
+package app01a;
 
 import javax.servlet.*;
 import javax.servlet.annotation.WebServlet;
@@ -10,7 +10,7 @@ public class MyServlet implements Servlet {
 
     private transient ServletConfig servletConfig;
 
-    public void init(ServletConfig servletConfig) throws ServletException {
+    public void init(ServletConfig servletConfig) {
         this.servletConfig = servletConfig;
     }
 
@@ -18,13 +18,13 @@ public class MyServlet implements Servlet {
         return servletConfig;
     }
 
-    public void service(ServletRequest servletRequest, ServletResponse servletResponse) throws ServletException, IOException {
+    public void service(ServletRequest servletRequest, ServletResponse servletResponse) throws IOException {
         String servletName = servletConfig.getServletName();
         servletResponse.setContentType("text/html");
         PrintWriter writer = servletResponse.getWriter();
-        writer.print("<html><head></head>" +
-                "<body>Hello from " + servletName +
-                "</body></html>");
+        writer.print("<html><head></head>"
+                + "<body>Hello from " + servletName
+                + "</body></html>");
     }
 
     public String getServletInfo() {
