@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="EntryPointsManager">
+    <pattern value="app04a.model.Address" />
+  </component>
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/app01a" />
     <file type="web" url="file://$PROJECT_DIR$/app01b" />
     <file type="web" url="file://$PROJECT_DIR$/app01c" />
     <file type="web" url="file://$PROJECT_DIR$/app02a" />
     <file type="web" url="file://$PROJECT_DIR$/app03a" />
+    <file type="web" url="file://$PROJECT_DIR$/app04a" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -15,6 +19,7 @@
         <option value="$PROJECT_DIR$/app01c/pom.xml" />
         <option value="$PROJECT_DIR$/app02a/pom.xml" />
         <option value="$PROJECT_DIR$/app03a/pom.xml" />
+        <option value="$PROJECT_DIR$/app04a/pom.xml" />
       </list>
     </option>
   </component>
