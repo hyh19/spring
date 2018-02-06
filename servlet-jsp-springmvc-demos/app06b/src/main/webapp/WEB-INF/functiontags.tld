@@ -9,6 +9,7 @@
     </description>
     <tlib-version>1.0</tlib-version>
     <short-name>functiontags</short-name>
+    <uri>http://example.com/taglib/function</uri>
 
     <function>
         <description>Reverses a String</description>
