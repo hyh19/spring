@@ -8,7 +8,7 @@ import java.io.IOException;
 
 public class SelectElementTag extends SimpleTagSupport {
 
-    private String[] countries = {"Australia", "Brazil", "China" };
+    private String[] countries = {"Australia", "Brazil", "China"};
 
     @Override
     public void doTag() throws JspException, IOException {
