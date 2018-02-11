@@ -17,6 +17,11 @@
       <module fileurl="file://$PROJECT_DIR$/app09a/app09a.iml" filepath="$PROJECT_DIR$/app09a/app09a.iml" />
       <module fileurl="file://$PROJECT_DIR$/app10a/app10a.iml" filepath="$PROJECT_DIR$/app10a/app10a.iml" />
       <module fileurl="file://$PROJECT_DIR$/app11a/app11a.iml" filepath="$PROJECT_DIR$/app11a/app11a.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app12a/app12a.iml" filepath="$PROJECT_DIR$/app12a/app12a.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app12b/app12b.iml" filepath="$PROJECT_DIR$/app12b/app12b.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app12c/app12c.iml" filepath="$PROJECT_DIR$/app12c/app12c.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app12d/app12d.iml" filepath="$PROJECT_DIR$/app12d/app12d.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app12e/app12e.iml" filepath="$PROJECT_DIR$/app12e/app12e.iml" />
     </modules>
   </component>
 </project>

@@ -21,6 +21,11 @@
         <module name="app09a" />
         <module name="app10a" />
         <module name="app11a" />
+        <module name="app12a" />
+        <module name="app12b" />
+        <module name="app12c" />
+        <module name="app12d" />
+        <module name="app12e" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -39,6 +44,11 @@
       <module name="app09a" target="1.5" />
       <module name="app10a" target="1.5" />
       <module name="app11a" target="1.5" />
+      <module name="app12a" target="1.5" />
+      <module name="app12b" target="1.5" />
+      <module name="app12c" target="1.5" />
+      <module name="app12d" target="1.5" />
+      <module name="app12e" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
