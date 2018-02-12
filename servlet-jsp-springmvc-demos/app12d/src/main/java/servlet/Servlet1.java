@@ -11,7 +11,6 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 @WebServlet(name = "Servlet1", urlPatterns = {"/servlet1"})
-//@ServletSecurity(@HttpConstraint(rolesAllowed = "manager"))
 public class Servlet1 extends HttpServlet {
 
     private static final long serialVersionUID = -11420L;
