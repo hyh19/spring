@@ -22,6 +22,8 @@
       <module fileurl="file://$PROJECT_DIR$/app12c/app12c.iml" filepath="$PROJECT_DIR$/app12c/app12c.iml" />
       <module fileurl="file://$PROJECT_DIR$/app12d/app12d.iml" filepath="$PROJECT_DIR$/app12d/app12d.iml" />
       <module fileurl="file://$PROJECT_DIR$/app12e/app12e.iml" filepath="$PROJECT_DIR$/app12e/app12e.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app14a/app14a.iml" filepath="$PROJECT_DIR$/app14a/app14a.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app15a/app15a.iml" filepath="$PROJECT_DIR$/app15a/app15a.iml" />
     </modules>
   </component>
 </project>
