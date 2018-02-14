@@ -1,4 +1,4 @@
-package app17b.controller;
+package app17a.controller;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -8,8 +8,8 @@ import org.springframework.web.servlet.mvc.Controller;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import app17b.domain.Product;
-import app17b.form.ProductForm;
+import app17a.domain.Product;
+import app17a.form.ProductForm;
 
 public class SaveProductController implements Controller {
 

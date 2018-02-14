@@ -2,6 +2,7 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean name="/product_input.action" class="InputProductController"/>
-    <bean name="/product_save.action" class="SaveProductController"/>
+    <!--路径映射-->
+    <bean name="/product_input.action" class="app17a.controller.InputProductController"/>
+    <bean name="/product_save.action" class="app17a.controller.SaveProductController"/>
 </beans>

@@ -1,4 +1,4 @@
-package app17b.form;
+package app17a.form;
 
 public class ProductForm {
     private String name;
