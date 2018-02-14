@@ -1,9 +1,11 @@
-package app17a.form;
+package app17b.domain;
+import java.io.Serializable;
 
-public class ProductForm {
+public class Product implements Serializable {
+    private static final long serialVersionUID = 748392348L;
     private String name;
     private String description;
-    private String price;
+    private float price;
 
     public String getName() {
         return name;
@@ -17,10 +19,10 @@ public class ProductForm {
     public void setDescription(String description) {
         this.description = description;
     }
-    public String getPrice() {
+    public float getPrice() {
         return price;
     }
-    public void setPrice(String price) {
+    public void setPrice(float price) {
         this.price = price;
     }
 }

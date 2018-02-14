@@ -1,4 +1,4 @@
-package app17a.controller;
+package app17b.controller;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -8,8 +8,8 @@ import org.springframework.web.servlet.mvc.Controller;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import app17a.domain.Product;
-import app17a.form.ProductForm;
+import app17b.domain.Product;
+import app17b.form.ProductForm;
 
 public class SaveProductController implements Controller {
 
@@ -33,6 +33,7 @@ public class SaveProductController implements Controller {
             product.setPrice(Float.parseFloat(productForm.getPrice()));
         } catch (NumberFormatException e) {
         }
-        return new ModelAndView("/WEB-INF/jsp/ProductDetails.jsp", "product", product);
+        // 直接写 JSP 页面的文件名，路径和扩展名自动会加上去。
+        return new ModelAndView("ProductDetails", "product", product);
     }
 }

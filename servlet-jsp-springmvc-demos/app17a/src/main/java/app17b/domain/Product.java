@@ -1,4 +1,4 @@
-package app17a.domain;
+package app17b.domain;
 import java.io.Serializable;
 
 public class Product implements Serializable {
