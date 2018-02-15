@@ -31,6 +31,7 @@
     <file type="web" url="file://$PROJECT_DIR$/app17a" />
     <file type="web" url="file://$PROJECT_DIR$/app17b" />
     <file type="web" url="file://$PROJECT_DIR$/app18a" />
+    <file type="web" url="file://$PROJECT_DIR$/app18b" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -63,6 +64,7 @@
         <option value="$PROJECT_DIR$/app17a/pom.xml" />
         <option value="$PROJECT_DIR$/app17b/pom.xml" />
         <option value="$PROJECT_DIR$/app18a/pom.xml" />
+        <option value="$PROJECT_DIR$/app18b/pom.xml" />
       </list>
     </option>
   </component>
