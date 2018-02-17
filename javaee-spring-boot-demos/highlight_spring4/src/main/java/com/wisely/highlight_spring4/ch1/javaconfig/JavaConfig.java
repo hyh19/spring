@@ -11,10 +11,18 @@ public class JavaConfig {
         return new FunctionService();
     }
 
+//    @Bean
+//    public UseFunctionService useFunctionService() {
+//        UseFunctionService useFunctionService = new UseFunctionService();
+//        useFunctionService.setFunctionService(functionService());
+//        return useFunctionService;
+//    }
+
     @Bean
-    public UseFunctionService useFunctionService() {
+    public UseFunctionService useFunctionService(FunctionService functionService) {
         UseFunctionService useFunctionService = new UseFunctionService();
-        useFunctionService.setFunctionService(functionService());
+        useFunctionService.setFunctionService(functionService);
         return useFunctionService;
     }
+
 }
