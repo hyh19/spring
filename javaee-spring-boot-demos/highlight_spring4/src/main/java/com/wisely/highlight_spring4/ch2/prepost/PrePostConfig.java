@@ -12,4 +12,9 @@ public class PrePostConfig {
     BeanWayService beanWayService() {
         return new BeanWayService();
     }
+
+    @Bean
+    JSR250WayService jsr250WayService() {
+        return new JSR250WayService();
+    }
 }
