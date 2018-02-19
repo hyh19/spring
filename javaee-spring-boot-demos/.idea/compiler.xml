@@ -10,6 +10,7 @@
         <module name="ch6_2_3" />
         <module name="ch6_4" />
         <module name="ch7_2" />
+        <module name="ch7_4" />
         <module name="highlight_spring4" />
       </profile>
     </annotationProcessing>
@@ -18,6 +19,7 @@
       <module name="ch6_2_3" target="1.8" />
       <module name="ch6_4" target="1.8" />
       <module name="ch7_2" target="1.8" />
+      <module name="ch7_4" target="1.8" />
       <module name="highlight_spring4" target="1.7" />
     </bytecodeTargetLevel>
   </component>
