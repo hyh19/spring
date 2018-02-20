@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/ch7_2/ch7_2.iml" filepath="$PROJECT_DIR$/ch7_2/ch7_2.iml" />
       <module fileurl="file://$PROJECT_DIR$/ch7_4/ch7_4.iml" filepath="$PROJECT_DIR$/ch7_4/ch7_4.iml" />
       <module fileurl="file://$PROJECT_DIR$/highlight_spring4/highlight_spring4.iml" filepath="$PROJECT_DIR$/highlight_spring4/highlight_spring4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/highlight_springmvc4/highlight_springmvc4.iml" filepath="$PROJECT_DIR$/highlight_springmvc4/highlight_springmvc4.iml" />
     </modules>
   </component>
 </project>

@@ -32,13 +32,13 @@ public class Ch74Application {
 //	}
 
 	// 服务器配置的第三种方法：针对特定的服务器配置，返回一个 bean。
-	@Bean
-	public EmbeddedServletContainerFactory servletContainer() {
-		TomcatEmbeddedServletContainerFactory factory = new TomcatEmbeddedServletContainerFactory();
-		factory.setPort(7070);
-		factory.setSessionTimeout(10, TimeUnit.MINUTES);
-		factory.addErrorPages(new ErrorPage(HttpStatus.NOT_FOUND, "/404.html"));
-		return factory;
-	}
+//	@Bean
+//	public EmbeddedServletContainerFactory servletContainer() {
+//		TomcatEmbeddedServletContainerFactory factory = new TomcatEmbeddedServletContainerFactory();
+//		factory.setPort(7070);
+//		factory.setSessionTimeout(10, TimeUnit.MINUTES);
+//		factory.addErrorPages(new ErrorPage(HttpStatus.NOT_FOUND, "/404.html"));
+//		return factory;
+//	}
 
 }
