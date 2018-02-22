@@ -2,8 +2,6 @@ package app16b.servlet;
 
 import app16b.controller.InputProductController;
 import app16b.controller.SaveProductController;
-import app16b.domain.Product;
-import app16b.form.ProductForm;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
