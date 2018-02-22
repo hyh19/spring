@@ -1,7 +1,7 @@
-package app16b.servlet;
+package app16a.servlet;
 
-import app16b.domain.Product;
-import app16b.form.ProductForm;
+import app16a.domain.Product;
+import app16a.form.ProductForm;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;

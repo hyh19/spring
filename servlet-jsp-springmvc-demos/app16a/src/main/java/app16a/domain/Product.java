@@ -1,4 +1,4 @@
-package app16b.domain;
+package app16a.domain;
 
 import java.io.Serializable;
 
