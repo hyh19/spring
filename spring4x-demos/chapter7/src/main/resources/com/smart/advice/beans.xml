@@ -3,12 +3,22 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <!--7.3.2 节示例的配置-->
-    <bean id="greetingAdvice" class="com.smart.advice.GreetingBeforeAdvice"/>
+    <!--7.3.2 节示例（前置增强）的配置-->
+    <!--<bean id="greetingAdvice" class="com.smart.advice.GreetingBeforeAdvice"/>-->
+    <!--<bean id="target" class="com.smart.advice.NaiveWaiter"/>-->
+    <!--<bean id="waiter" class="org.springframework.aop.framework.ProxyFactoryBean"-->
+          <!--p:proxyInterfaces="com.smart.advice.Waiter"-->
+          <!--p:interceptorNames="greetingAdvice"-->
+          <!--p:target-ref="target"-->
+    <!--/>-->
+
+    <!--7.3.3 节示例（后置增强）的配置-->
+    <bean id="greetingBefore" class="com.smart.advice.GreetingBeforeAdvice"/>
+    <bean id="greetingAfter" class="com.smart.advice.GreetingAfterAdvice"/>
     <bean id="target" class="com.smart.advice.NaiveWaiter"/>
     <bean id="waiter" class="org.springframework.aop.framework.ProxyFactoryBean"
           p:proxyInterfaces="com.smart.advice.Waiter"
-          p:interceptorNames="greetingAdvice"
+          p:interceptorNames="greetingBefore,greetingAfter"
           p:target-ref="target"
     />
 </beans>
