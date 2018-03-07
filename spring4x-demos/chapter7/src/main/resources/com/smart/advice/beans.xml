@@ -13,12 +13,22 @@
     <!--/>-->
 
     <!--7.3.3 节示例（后置增强）的配置-->
-    <bean id="greetingBefore" class="com.smart.advice.GreetingBeforeAdvice"/>
-    <bean id="greetingAfter" class="com.smart.advice.GreetingAfterAdvice"/>
+    <!--<bean id="greetingBefore" class="com.smart.advice.GreetingBeforeAdvice"/>-->
+    <!--<bean id="greetingAfter" class="com.smart.advice.GreetingAfterAdvice"/>-->
+    <!--<bean id="target" class="com.smart.advice.NaiveWaiter"/>-->
+    <!--<bean id="waiter" class="org.springframework.aop.framework.ProxyFactoryBean"-->
+          <!--p:proxyInterfaces="com.smart.advice.Waiter"-->
+          <!--p:interceptorNames="greetingBefore,greetingAfter"-->
+          <!--p:target-ref="target"-->
+    <!--/>-->
+
+    <!--7.3.4 节示例（环绕增强）的配置-->
+    <bean id="greetingAround" class="com.smart.advice.GreetingInterceptor"/>
     <bean id="target" class="com.smart.advice.NaiveWaiter"/>
     <bean id="waiter" class="org.springframework.aop.framework.ProxyFactoryBean"
           p:proxyInterfaces="com.smart.advice.Waiter"
-          p:interceptorNames="greetingBefore,greetingAfter"
+          p:interceptorNames="greetingAround"
           p:target-ref="target"
     />
+
 </beans>
