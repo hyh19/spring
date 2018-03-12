@@ -1,17 +1,21 @@
 package com.smart;
 
-public class Car {
+import org.springframework.beans.BeansException;
+import org.springframework.beans.factory.*;
+
+/**
+ * 4.5.1 节 第 106 页
+ */
+public class Car implements BeanFactoryAware, BeanNameAware, InitializingBean, DisposableBean {
+
     private String brand;
     private String color;
     private int maxSpeed;
+    private BeanFactory beanFactory;
+    private String beanName;
 
     public Car() {
-    }
-
-    public Car(String brand, String color, int maxSpeed) {
-        this.brand = brand;
-        this.color = color;
-        this.maxSpeed = maxSpeed;
+        System.out.println("调用Car()构造函数。");
     }
 
     public String getBrand() {
@@ -19,6 +23,7 @@ public class Car {
     }
 
     public void setBrand(String brand) {
+        System.out.println("调用setBrand()设置属性。");
         this.brand = brand;
     }
 
@@ -45,5 +50,32 @@ public class Car {
                 ", color='" + color + '\'' +
                 ", maxSpeed=" + maxSpeed +
                 '}';
+    }
+
+    public void setBeanFactory(BeanFactory beanFactory) throws BeansException {
+        System.out.println("调用BeanFactoryAware.setBeanFactory()。");
+        this.beanFactory = beanFactory;
+    }
+
+    public void setBeanName(String s) {
+        System.out.println("调用BeanNameAware.setBeanName()。");
+        this.beanName = beanName;
+    }
+
+    public void afterPropertiesSet() throws Exception {
+        System.out.println("调用InitializingBean.afterPropertiesSet()。");
+    }
+
+    public void destroy() throws Exception {
+        System.out.println("调用DisposableBean.destory()。");
+    }
+
+    public void myInit() {
+        System.out.println("调用myInit()，将maxSpeed设置为240。");
+        this.maxSpeed = 240;
+    }
+
+    public void myDestory() {
+        System.out.println("调用myDestroy()。");
     }
 }
