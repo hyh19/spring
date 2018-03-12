@@ -22,7 +22,7 @@ public class BeanFactoryExample {
         XmlBeanDefinitionReader reader = new XmlBeanDefinitionReader(factory);
         reader.loadBeanDefinitions(resource);
 
-        Car car = factory.getBean("car1", Car.class);
+        Car car = factory.getBean("car", Car.class);
         System.out.println(car.toString());
     }
 }
