@@ -19,7 +19,8 @@ public class BeanLifeCycleExample {
         XmlBeanDefinitionReader reader = new XmlBeanDefinitionReader((DefaultListableBeanFactory) factory);
         reader.loadBeanDefinitions(resource);
 
-        ((DefaultListableBeanFactory) factory).addBeanPostProcessor(new MyInstantiationAwareBeanPostProcessor());
+        // ((DefaultListableBeanFactory) factory).addBeanPostProcessor(new MyBeanPostProcessor());
+        // ((DefaultListableBeanFactory) factory).addBeanPostProcessor(new MyInstantiationAwareBeanPostProcessor());
 
         Car car1 = factory.getBean("car", Car.class);
         Car car2 = factory.getBean("car", Car.class);
