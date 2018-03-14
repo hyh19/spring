@@ -1,26 +1,26 @@
 package com.smart.attr;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
- * 5.4.6 集合类型属性 强类型集合
+ * 5.4.6 集合类型属性 集合合并
  */
 public class Boss {
-    private Map<String, Integer> jobTime = new HashMap<>();
+    private Set favorites = new HashSet();
 
-    public Map<String, Integer> getJobTime() {
-        return jobTime;
+    public Set getFavorites() {
+        return favorites;
     }
 
-    public void setJobTime(Map<String, Integer> jobTime) {
-        this.jobTime = jobTime;
+    public void setFavorites(Set favorites) {
+        this.favorites = favorites;
     }
 
     @Override
     public String toString() {
         return "Boss{" +
-                "jobTime=" + jobTime +
+                "favorites=" + favorites +
                 '}';
     }
 }

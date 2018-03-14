@@ -21,7 +21,7 @@ public class MyTest {
 
     @Test
     public void test() {
-        Boss boss = context.getBean("boss", Boss.class);
+        Boss boss = context.getBean("childBoss", Boss.class);
         assertNotNull(boss);
         System.out.println(boss);
     }
