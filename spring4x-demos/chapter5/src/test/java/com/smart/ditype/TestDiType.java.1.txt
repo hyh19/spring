@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 import static org.testng.Assert.assertNotNull;
 
 public class TestDiType {
-    private ApplicationContext context = null;
+    public ApplicationContext context = null;
     private static String[] CONFIG_FILES = {"com/smart/ditype/beans.xml"};
 
     @BeforeClass
@@ -17,9 +17,9 @@ public class TestDiType {
     }
 
     @Test
-    public void testBoss() {
-        Boss boss = context.getBean("boss", Boss.class);
-        assertNotNull(boss);
-        System.out.println(boss);
+    public void testCar() {
+        Car car = context.getBean("car", Car.class);
+        assertNotNull(car);
+        System.out.println(car);
     }
 }

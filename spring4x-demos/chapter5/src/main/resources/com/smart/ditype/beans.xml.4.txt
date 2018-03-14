@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--5.3.2 节 联合使用类型和索引匹配入参-->
+    <bean id="car" class="com.smart.ditype.Car">
+        <constructor-arg index="0" type="java.lang.String" value="红旗CA72"/>
+        <constructor-arg index="1" type="java.lang.String" value="中国一汽"/>
+        <constructor-arg index="2" type="int" value="200"/>
+    </bean>
+</beans>
