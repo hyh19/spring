@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 import static org.testng.Assert.assertNotNull;
 
 /**
- * 5.3.3 节 工厂方法注入
+ * 5.3.2 节 通过自身类型反射匹配入参
  */
 public class TestDiType {
     private ApplicationContext context = null;
@@ -20,13 +20,9 @@ public class TestDiType {
     }
 
     @Test
-    public void testCar() {
-        Car car1 = context.getBean("car1", Car.class);
-        assertNotNull(car1);
-        System.out.println(car1);
-
-        Car car2 = context.getBean("car2", Car.class);
-        assertNotNull(car2);
-        System.out.println(car2);
+    public void testBoss() {
+        Boss boss = context.getBean("boss", Boss.class);
+        assertNotNull(boss);
+        System.out.println(boss);
     }
 }
