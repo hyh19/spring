@@ -1,0 +1,29 @@
+package com.smart.attr;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+import static org.testng.Assert.assertNotNull;
+import static org.testng.Assert.assertTrue;
+
+/**
+ * 5.4.1 节 字面值
+ */
+public class TestBeanAttrDI {
+    private ApplicationContext context = null;
+    private static String[] CONFIG_FILES = {"com/smart/attr/beans.xml"};
+
+    @BeforeClass
+    public void setUp() throws Exception {
+        context = new ClassPathXmlApplicationContext(CONFIG_FILES);
+    }
+
+    @Test
+    public void testBeanRetrieveCar() {
+        Car car = context.getBean("car", Car.class);
+        assertNotNull(car);
+        System.out.println("" + car);
+    }
+}
