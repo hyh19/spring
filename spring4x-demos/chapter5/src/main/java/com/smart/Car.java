@@ -1,12 +1,11 @@
-package com.smart.ditype;
+package com.smart;
 
 /**
- * 5.4.7 使用 p 命名空间
+ * 5.4.8 自动装配
  */
 public class Car {
-
     private String brand;
-    private int maxSpeed;
+    private String corp;
     private double price;
 
     public String getBrand() {
@@ -17,12 +16,12 @@ public class Car {
         this.brand = brand;
     }
 
-    public int getMaxSpeed() {
-        return maxSpeed;
+    public String getCorp() {
+        return corp;
     }
 
-    public void setMaxSpeed(int maxSpeed) {
-        this.maxSpeed = maxSpeed;
+    public void setCorp(String corp) {
+        this.corp = corp;
     }
 
     public double getPrice() {
@@ -37,7 +36,7 @@ public class Car {
     public String toString() {
         return "Car{" +
                 "brand='" + brand + '\'' +
-                ", maxSpeed=" + maxSpeed +
+                ", corp='" + corp + '\'' +
                 ", price=" + price +
                 '}';
     }

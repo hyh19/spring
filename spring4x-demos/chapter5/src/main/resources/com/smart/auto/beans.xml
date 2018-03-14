@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--5.4.8 自动装配-->
+    <bean id="car" class="com.smart.Car" scope="singleton">
+        <property name="brand" value="红旗"/>
+        <property name="price" value="20000.00"/>
+    </bean>
+
+    <bean id="office" class="com.smart.Office" autowire-candidate="false">
+        <property name="city" value="Guangzhou"/>
+    </bean>
+    <bean id="office1" class="com.smart.Office" autowire-candidate="true">
+        <property name="city" value="Huizhou"/>
+    </bean>
+
+    <bean id="boss" class="com.smart.Boss" autowire="constructor">
+        <constructor-arg index="0" value="John"/>
+    </bean>
+
+</beans>

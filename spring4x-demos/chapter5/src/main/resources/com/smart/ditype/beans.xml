@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <!--5.3.3 节 工厂方法注入-->
-    <bean id="carFactory" class="com.smart.ditype.CarFactory"/>
-    <bean id="car1" factory-bean="carFactory" factory-method="createHongQiCar"/>
-    <bean id="car2" class="com.smart.ditype.CarFactory" factory-method="createQiRuiCar"/>
+    <!--5.4.7 使用 p 命名空间-->
+    <bean id="car" class="com.smart.ditype.Car"
+          p:brand="红旗"
+          p:maxSpeed="200"
+          p:price="20000.00"/>
+    <bean id="boss" class="com.smart.ditype.Boss"
+          p:car-ref="car"/>
 </beans>
