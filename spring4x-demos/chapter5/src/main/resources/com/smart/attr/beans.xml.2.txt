@@ -2,14 +2,17 @@
 <beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns="http://www.springframework.org/schema/beans"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <!--5.4.3 内部 Bean-->
+    <!--5.4.2 节 引用其他 Bean-->
+    <bean id="car" class="com.smart.attr.Car">
+        <property name="maxSpeed" value="200"/>
+        <property name="brand">
+            <value><![CDATA[红旗&CA72]]></value>
+        </property>
+    </bean>
+
     <bean id="boss" class="com.smart.attr.Boss">
         <property name="car">
-            <bean class="com.smart.attr.Car">
-                <property name="maxSpeed" value="200"/>
-                <property name="price" value="20000.00"/>
-                <property name="brand" value="吉利"/>
-            </bean>
+            <ref bean="car"/>
         </property>
     </bean>
 </beans>

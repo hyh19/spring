@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--5.4.4 null 值-->
+    <bean id="car" class="com.smart.attr.Car">
+        <property name="brand">
+            <null></null>
+        </property>
+        <property name="price" value="20000.00"/>
+        <property name="maxSpeed" value="200"/>
+    </bean>
+</beans>

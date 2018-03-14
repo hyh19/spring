@@ -7,6 +7,7 @@ package com.smart.attr;
 public class Car {
     private String brand;
     private int maxSpeed;
+    private double price;
 
     public void setBrand(String brand) {
         this.brand = brand;
@@ -16,11 +17,16 @@ public class Car {
         this.maxSpeed = maxSpeed;
     }
 
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
     @Override
     public String toString() {
         return "Car{" +
                 "brand='" + brand + '\'' +
                 ", maxSpeed=" + maxSpeed +
+                ", price=" + price +
                 '}';
     }
 }
