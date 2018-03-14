@@ -1,0 +1,25 @@
+package com.smart.attr;
+
+import java.util.Properties;
+
+/**
+ * 5.4.6 集合类型属性 Properties
+ */
+public class Boss {
+    private Properties mails = new Properties();
+
+    public Properties getMails() {
+        return mails;
+    }
+
+    public void setMails(Properties mails) {
+        this.mails = mails;
+    }
+
+    @Override
+    public String toString() {
+        return "Boss{" +
+                "mails=" + mails +
+                '}';
+    }
+}

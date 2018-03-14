@@ -1,0 +1,23 @@
+package com.smart.attr;
+
+/**
+ * 5.4.5 级联属性
+ */
+public class Boss {
+    private Car car = new Car();
+
+    public void setCar(Car car) {
+        this.car = car;
+    }
+
+    public Car getCar() {
+        return car;
+    }
+
+    @Override
+    public String toString() {
+        return "Boss{" +
+                "car=" + car +
+                '}';
+    }
+}

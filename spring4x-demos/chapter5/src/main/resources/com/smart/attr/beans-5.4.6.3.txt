@@ -2,11 +2,12 @@
 <beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns="http://www.springframework.org/schema/beans"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <!--5.4.6 集合类型属性 强类型集合-->
+    <!--5.4.6 集合类型属性 Map-->
     <bean id="boss" class="com.smart.attr.Boss">
-        <property name="jobTime">
+        <property name="jobs">
             <map>
-                <entry key="会见客户" value="124"/>
+                <entry key="AM" value="会见客户"/>
+                <entry key="PM" value="公司内部会议"/>
             </map>
         </property>
     </bean>

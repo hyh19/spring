@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 import static org.testng.Assert.assertNotNull;
 
 /**
- * 5.4.6 集合类型属性
+ * 5.4.3 内部 Bean
  */
 public class MyTest {
     private ApplicationContext context = null;
@@ -23,6 +23,6 @@ public class MyTest {
     public void test() {
         Boss boss = context.getBean("boss", Boss.class);
         assertNotNull(boss);
-        System.out.println(boss);
+        System.out.println(boss.getCar());
     }
 }

@@ -2,12 +2,14 @@
 <beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns="http://www.springframework.org/schema/beans"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <!--5.4.6 集合类型属性 强类型集合-->
+    <!--5.4.3 内部 Bean-->
     <bean id="boss" class="com.smart.attr.Boss">
-        <property name="jobTime">
-            <map>
-                <entry key="会见客户" value="124"/>
-            </map>
+        <property name="car">
+            <bean class="com.smart.attr.Car">
+                <property name="maxSpeed" value="200"/>
+                <property name="price" value="20000.00"/>
+                <property name="brand" value="吉利"/>
+            </bean>
         </property>
     </bean>
 </beans>

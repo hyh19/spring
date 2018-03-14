@@ -1,0 +1,26 @@
+package com.smart.attr;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * 5.4.6 集合类型属性
+ */
+public class Boss {
+    private List favorites = new ArrayList();
+
+    public List getFavorites() {
+        return favorites;
+    }
+
+    public void setFavorites(List favorites) {
+        this.favorites = favorites;
+    }
+
+    @Override
+    public String toString() {
+        return "Boss{" +
+                "favorites=" + favorites +
+                '}';
+    }
+}
